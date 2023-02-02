@@ -1,0 +1,30 @@
+.UserForm {
+	&__form {
+		padding: 0.5rem;
+	}
+
+	&__legend {
+		text-align: center;
+		font-size: 1.5rem;
+	}
+
+	&__fieldset {
+		display: flex;
+		flex-direction: column;
+		border: none;
+	}
+
+	&__fieldset > input {
+		padding: 0.25rem;
+		margin-bottom: 0.5rem;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	&__fieldset > [data-btn-save] {
+		@include button-primary;
+		margin: 1rem 0 0 0;
+	}
+}

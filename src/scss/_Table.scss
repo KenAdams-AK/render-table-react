@@ -1,0 +1,26 @@
+.Table {
+	&__buttons {
+		padding: 1rem;
+		text-align: center;
+
+		& > button {
+			@include button-primary;
+			margin: 0.5rem;
+		}
+	}
+
+	&__table {
+		width: 100%;
+		margin: 0 auto;
+		border-collapse: collapse;
+	}
+
+	&__table th,
+	&__table td {
+		border: 1px solid $color-dark;
+	}
+
+	&__table th {
+		padding: 0.7rem;
+	}
+}

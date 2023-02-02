@@ -1,0 +1,51 @@
+$color-primary: hsl(208, 97%, 47%);
+$color-secondary: hsl(225, 71%, 38%);
+$color-dark: hsl(208, 100%, 13%);
+$color-light: hsl(0, 0%, 96%);
+$color-grey: hsl(0, 0%, 47%);
+$color-success: hsl(120, 39%, 54%);
+$color-error: hsl(2, 64%, 58%);
+$color-yellow: hsl(60, 100%, 50%);
+
+@mixin button-primary {
+	color: $color-light;
+	background: $color-primary;
+	border: none;
+	border-radius: 0.5rem;
+	padding: 0.35rem 0.75rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	cursor: pointer;
+
+	&:hover {
+		background: $color-secondary;
+		color: $color-light;
+	}
+
+	&:disabled {
+		background-color: $color-grey;
+		opacity: 0.5;
+		cursor: inherit;
+	}
+}
+
+.title {
+	margin: 20px auto;
+	text-align: center;
+	color: $color-error;
+}
+
+.container {
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+.error {
+	padding: 1.5rem;
+	color: $color-error;
+}
+
+.loader {
+	padding: 1.5rem;
+	color: $color-success;
+}

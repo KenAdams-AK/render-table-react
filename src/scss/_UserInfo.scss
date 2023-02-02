@@ -1,0 +1,19 @@
+.UserInfo {
+	&__title,
+	&__subtitle {
+		text-align: center;
+	}
+
+	ul {
+		padding: 1rem;
+	}
+
+	ul > span {
+		font-weight: bolder;
+		margin-left: 1rem;
+	}
+
+	ul > li {
+		list-style: none;
+	}
+}

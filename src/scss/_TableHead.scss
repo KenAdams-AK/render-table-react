@@ -1,0 +1,7 @@
+.TableHead {
+	background-color: $color-grey;
+
+	&__row > th:not([data-column="buttons"], [colspan="3"]) {
+		cursor: pointer;
+	}
+}

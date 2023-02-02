@@ -1,0 +1,56 @@
+.TableBody {
+	&__row:hover {
+		background-color: $color-primary;
+		// cursor: pointer;
+	}
+
+	&__row td {
+		padding: 0.5rem;
+	}
+
+	&__row td[data-column="buttons"] {
+		pointer-events: none;
+
+		button {
+			@include button-primary;
+			display: block;
+			margin: 0.25rem auto;
+			scale: 0.8;
+			pointer-events: auto;
+
+			&:first-of-type {
+				background-color: $color-grey;
+			}
+			&:last-of-type {
+				background-color: $color-error;
+			}
+
+			&[data-btn-save] {
+				background-color: $color-success;
+			}
+		}
+	}
+
+	&__row .skeleton {
+		width: 90%;
+		height: 0.25rem;
+		margin: 0 auto 0.25rem;
+		border-radius: 0.125rem;
+		background-color: $color-grey;
+
+		animation: loading 1.3s linear infinite alternate;
+	}
+
+	&__row th .skeleton {
+		width: 50%;
+	}
+}
+
+@keyframes loading {
+	0% {
+		background-color: $color-grey;
+	}
+	100% {
+		background-color: transparent;
+	}
+}
